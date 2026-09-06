@@ -100,7 +100,7 @@ The Game Boy has eight inputs: four directions on the D-pad, and A, B, Start and
 
 \section{Introduction to the CPU}
 \label{cpu}
-One of the most important core concepts in ASM programming is registers. A register is a small memory storage inside the CPU, and in the case of the Game Boy CPU, each register hold one 8-bit number; an integer in the range of 0-255. The operations that the CPU can perform work on the numerical data currently stored in those registers, and the results of the computations are also stored in registers afterwards. 
+One of the most important core concepts in ASM programming is registers. A register is a small memory storage inside the CPU, and in the case of the Game Boy CPU, each register holds one 8-bit number; an integer in the range of 0-255. The operations that the CPU can perform work on the numerical data currently stored in those registers, and the results of the computations are also stored in registers afterwards. 
 
 There is one "main" register which is called A. The most "complicated" operations that the CPU supports, like addition and subtraction, work only on the A register. Other registers, like B, C, D, H and L (more on them and their names later) support only simpler operations like incrementing and decrementing (addition and subtraction by one) and nothing more complex than that. Therefore, those registers are used more for temporary storage of data, while the A register contains whatever data you are currently working with, in some sense.
 
